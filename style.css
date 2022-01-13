@@ -10,10 +10,21 @@ body {
 
 }
 
+h2 {
+    color: #562EFF;
+    padding-bottom: 30px;
+    font-size: 24px;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-bottom: 30px;
+}
+
 /*-----------------Hedaer Section Start now---------------*/
 header {
     background: #562EFF;
-    width: 1440px;
+    width: 100%;
     height: 94px;
     display: flex;
     justify-content: space-evenly;
@@ -60,4 +71,124 @@ header {
 .navber img {
     width: 51px;
     height: 51px;
+}
+
+/*--------------------- Main section start now -----------------------*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*---Top Player and blog section start now----*/
+.container {
+    max-width: 870px;
+    background: #FFFF;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    margin: 30 auto;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.players .player img {
+    width: 56px;
+    height: 56px;
+}
+
+.player h4 {
+    padding-left: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+    grid-column-gap: 16px;
+}
+
+.blog {
+    display: flex;
+    align-items: center;
+}
+
+.blog .blog-img img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-info h3 {
+    font-size: 20px;
+    padding-left: 16px;
+    line-height: 1.5;
+}
+
+.blog-info p {
+    font-size: 16px;
+    padding-left: 16px;
+    color: #9F9F9F;
+    padding-top: 10px;
+}
+
+.blog-info p span {
+    color: #562EFF;
+}
+
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header-logo {
+        padding-left: 10px;
+    }
+
+    .header-logo span {
+        padding-left: 10px;
+    }
+
+    .navber {
+        padding: 0 20px;
+    }
+
+    .navber ul li a {
+        padding-right: 15px;
+        font-size: 12px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+
 }
