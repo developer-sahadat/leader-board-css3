@@ -154,7 +154,7 @@ main {
 /*-------course section start now--------*/
 
 .course-section {
-    /* width: 100%;  */
+    width: 100%;
     max-width: 870px;
     background: #FFFF;
     margin: 0 auto;
